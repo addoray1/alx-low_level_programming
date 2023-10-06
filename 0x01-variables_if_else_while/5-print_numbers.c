@@ -2,19 +2,20 @@
 
 
 /**
- * main - program that prints the alphabet in lowercase and upper case
+ * main - program that prints the numbers from 0 to 9
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
+	int number;
+
+	for (number = 0; number <= 9; number++)
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+		putchar(number + '0');
 	}
+
 	putchar('\n');
 
 	return (0);
